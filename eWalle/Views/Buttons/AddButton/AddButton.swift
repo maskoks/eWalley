@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AddButton: UIButton {
+final class AddButton: UIButton {
 
-    let type: AddButtonType
+    private let type: AddButtonType
 
     override var intrinsicContentSize: CGSize {
         return CGSize(width: type.size, height: type.size)

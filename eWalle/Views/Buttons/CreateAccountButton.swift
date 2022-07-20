@@ -14,9 +14,9 @@ final class CreateAccountButton: UIButton {
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     override var intrinsicContentSize: CGSize {

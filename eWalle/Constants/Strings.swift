@@ -8,6 +8,17 @@
 import Foundation
 
 struct Strings {
+    enum Global {
+        case appTitle
+
+        func string() -> String {
+            switch self {
+            case .appTitle:
+                return Strings.Global.appTitle.string()
+            }
+        }
+    }
+
     enum Buttons {
         case signIn
         case createAccount

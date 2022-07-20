@@ -7,9 +7,9 @@
 
 import UIKit
 
-class NavigationButton: UIButton {
+final class NavigationButton: UIButton {
 
-    let type: NavigationButtonType
+    private let type: NavigationButtonType
 
     override var intrinsicContentSize: CGSize {
         return CGSize(width: 44.0, height: 44.0)

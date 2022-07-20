@@ -6,6 +6,8 @@
   
 */
 
+// MARK: - Global
+"Global.App.Title" = "eWalle";
 
 // MARK: - Buttons
 "Views.Button.Title.SignIn" = "Sign In";

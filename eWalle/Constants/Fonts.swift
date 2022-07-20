@@ -27,4 +27,15 @@ struct Fonts {
             }
         }
     }
+
+    enum Ubuntu {
+        case medium(size: CGFloat)
+
+        func font() -> UIFont {
+            switch self {
+            case .medium(let size):
+                return UIFont(name: "Ubuntu-Medium", size: size)!
+            }
+        }
+    }
 }

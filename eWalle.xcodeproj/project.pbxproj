@@ -36,6 +36,8 @@
 		31469A5428889F9100F92B56 /* NavigationButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5328889F9100F92B56 /* NavigationButtonType.swift */; };
 		31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A552888A2E800F92B56 /* MagicLayout.swift */; };
 		31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A582888A5F400F92B56 /* AddButtonType.swift */; };
+		31469A5C2888A73200F92B56 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5B2888A73200F92B56 /* LogoView.swift */; };
+		31469A5E2888AACE00F92B56 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */; };
 		718548057DCBFFBD80329E92 /* Pods_eWalle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */; };
 		C46D651709BC571146890956 /* Pods_eWalleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27601A3607BF2707BEDDC92C /* Pods_eWalleTests.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		31469A5328889F9100F92B56 /* NavigationButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonType.swift; sourceTree = "<group>"; };
 		31469A552888A2E800F92B56 /* MagicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicLayout.swift; sourceTree = "<group>"; };
 		31469A582888A5F400F92B56 /* AddButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonType.swift; sourceTree = "<group>"; };
+		31469A5B2888A73200F92B56 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		3ACA0D5E4D3466D0B7C3DE87 /* Pods-eWalleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWalleTests.release.xcconfig"; path = "Target Support Files/Pods-eWalleTests/Pods-eWalleTests.release.xcconfig"; sourceTree = "<group>"; };
 		46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle_eWalleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +213,7 @@
 		31469A332888817500F92B56 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				31469A5B2888A73200F92B56 /* LogoView.swift */,
 				31469A342888817F00F92B56 /* Buttons */,
 			);
 			path = Views;
@@ -237,6 +242,7 @@
 		31469A3C28888F7700F92B56 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */,
 				31469A3E28888F9300F92B56 /* AvenirNextCyr-Bold.ttf */,
 				31469A3D28888F9300F92B56 /* AvenirNextCyr-Demi.ttf */,
 				31469A3F28888F9300F92B56 /* AvenirNextCyr-Medium.ttf */,
@@ -411,6 +417,7 @@
 				312A69CB28887C140040CE02 /* Localizable.strings in Resources */,
 				31469A4328888F9300F92B56 /* AvenirNextCyr-Medium.ttf in Resources */,
 				31469A4228888F9300F92B56 /* AvenirNextCyr-Bold.ttf in Resources */,
+				31469A5E2888AACE00F92B56 /* Ubuntu-Medium.ttf in Resources */,
 				31469A4428888F9300F92B56 /* AvenirNextCyr-Regular.ttf in Resources */,
 				312A69A0288874390040CE02 /* Assets.xcassets in Resources */,
 				312A699B288874370040CE02 /* Main.storyboard in Resources */,
@@ -541,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31469A5C2888A73200F92B56 /* LogoView.swift in Sources */,
 				31469A4728888FF100F92B56 /* Fonts.swift in Sources */,
 				31469A4D288891B200F92B56 /* Strings.swift in Sources */,
 				31469A492888909900F92B56 /* Colors.swift in Sources */,
