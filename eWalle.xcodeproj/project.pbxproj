@@ -38,6 +38,7 @@
 		31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A582888A5F400F92B56 /* AddButtonType.swift */; };
 		31469A5C2888A73200F92B56 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5B2888A73200F92B56 /* LogoView.swift */; };
 		31469A5E2888AACE00F92B56 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */; };
+		31469A602888B04900F92B56 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5F2888B04900F92B56 /* SignInHeaderView.swift */; };
 		718548057DCBFFBD80329E92 /* Pods_eWalle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */; };
 		C46D651709BC571146890956 /* Pods_eWalleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27601A3607BF2707BEDDC92C /* Pods_eWalleTests.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		31469A582888A5F400F92B56 /* AddButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonType.swift; sourceTree = "<group>"; };
 		31469A5B2888A73200F92B56 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		31469A5F2888B04900F92B56 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		3ACA0D5E4D3466D0B7C3DE87 /* Pods-eWalleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWalleTests.release.xcconfig"; path = "Target Support Files/Pods-eWalleTests/Pods-eWalleTests.release.xcconfig"; sourceTree = "<group>"; };
 		46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle_eWalleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +217,7 @@
 			children = (
 				31469A5B2888A73200F92B56 /* LogoView.swift */,
 				31469A342888817F00F92B56 /* Buttons */,
+				31469A5F2888B04900F92B56 /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */,
 				312A699E288874370040CE02 /* eWalle.xcdatamodeld in Sources */,
 				31469A51288895B700F92B56 /* CreateAccountButton.swift in Sources */,
+				31469A602888B04900F92B56 /* SignInHeaderView.swift in Sources */,
 				312A6994288874370040CE02 /* AppDelegate.swift in Sources */,
 				312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */,
 				312A6996288874370040CE02 /* SceneDelegate.swift in Sources */,
