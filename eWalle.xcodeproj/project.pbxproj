@@ -21,6 +21,21 @@
 		312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A69C6288874F00040CE02 /* SecondViewController.swift */; };
 		312A69CB28887C140040CE02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 312A69CA28887C140040CE02 /* Localizable.strings */; };
 		312A69CD28887C5E0040CE02 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312A69CC28887C5E0040CE02 /* Colors.xcassets */; };
+		31469A38288881B100F92B56 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A37288881B100F92B56 /* SignInButton.swift */; };
+		31469A3A288881C300F92B56 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A39288881C300F92B56 /* AddButton.swift */; };
+		31469A4128888F9300F92B56 /* AvenirNextCyr-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A3D28888F9300F92B56 /* AvenirNextCyr-Demi.ttf */; };
+		31469A4228888F9300F92B56 /* AvenirNextCyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A3E28888F9300F92B56 /* AvenirNextCyr-Bold.ttf */; };
+		31469A4328888F9300F92B56 /* AvenirNextCyr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A3F28888F9300F92B56 /* AvenirNextCyr-Medium.ttf */; };
+		31469A4428888F9300F92B56 /* AvenirNextCyr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A4028888F9300F92B56 /* AvenirNextCyr-Regular.ttf */; };
+		31469A4728888FF100F92B56 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A4628888FF100F92B56 /* Fonts.swift */; };
+		31469A492888909900F92B56 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A482888909900F92B56 /* Colors.swift */; };
+		31469A4B2888919200F92B56 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A4A2888919200F92B56 /* TextHelper.swift */; };
+		31469A4D288891B200F92B56 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A4C288891B200F92B56 /* Strings.swift */; };
+		31469A4F288895A700F92B56 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A4E288895A700F92B56 /* NavigationButton.swift */; };
+		31469A51288895B700F92B56 /* CreateAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A50288895B700F92B56 /* CreateAccountButton.swift */; };
+		31469A5428889F9100F92B56 /* NavigationButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5328889F9100F92B56 /* NavigationButtonType.swift */; };
+		31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A552888A2E800F92B56 /* MagicLayout.swift */; };
+		31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A582888A5F400F92B56 /* AddButtonType.swift */; };
 		718548057DCBFFBD80329E92 /* Pods_eWalle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */; };
 		C46D651709BC571146890956 /* Pods_eWalleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27601A3607BF2707BEDDC92C /* Pods_eWalleTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +76,21 @@
 		312A69C6288874F00040CE02 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		312A69CA28887C140040CE02 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		312A69CC28887C5E0040CE02 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		31469A37288881B100F92B56 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
+		31469A39288881C300F92B56 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		31469A3D28888F9300F92B56 /* AvenirNextCyr-Demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCyr-Demi.ttf"; sourceTree = "<group>"; };
+		31469A3E28888F9300F92B56 /* AvenirNextCyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCyr-Bold.ttf"; sourceTree = "<group>"; };
+		31469A3F28888F9300F92B56 /* AvenirNextCyr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCyr-Medium.ttf"; sourceTree = "<group>"; };
+		31469A4028888F9300F92B56 /* AvenirNextCyr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCyr-Regular.ttf"; sourceTree = "<group>"; };
+		31469A4628888FF100F92B56 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		31469A482888909900F92B56 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		31469A4A2888919200F92B56 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
+		31469A4C288891B200F92B56 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		31469A4E288895A700F92B56 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		31469A50288895B700F92B56 /* CreateAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountButton.swift; sourceTree = "<group>"; };
+		31469A5328889F9100F92B56 /* NavigationButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonType.swift; sourceTree = "<group>"; };
+		31469A552888A2E800F92B56 /* MagicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicLayout.swift; sourceTree = "<group>"; };
+		31469A582888A5F400F92B56 /* AddButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonType.swift; sourceTree = "<group>"; };
 		3ACA0D5E4D3466D0B7C3DE87 /* Pods-eWalleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWalleTests.release.xcconfig"; path = "Target Support Files/Pods-eWalleTests/Pods-eWalleTests.release.xcconfig"; sourceTree = "<group>"; };
 		46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle_eWalleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +154,9 @@
 		312A6992288874370040CE02 /* eWalle */ = {
 			isa = PBXGroup;
 			children = (
+				31469A4528888FE400F92B56 /* Constants */,
+				31469A3B288881DE00F92B56 /* Helpers */,
+				31469A332888817500F92B56 /* Views */,
 				312A69C928887BDD0040CE02 /* Resources */,
 				312A69C828887BBC0040CE02 /* Application */,
 				312A6997288874370040CE02 /* ViewController.swift */,
@@ -165,11 +198,79 @@
 		312A69C928887BDD0040CE02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				31469A3C28888F7700F92B56 /* Fonts */,
 				312A699F288874390040CE02 /* Assets.xcassets */,
 				312A69CA28887C140040CE02 /* Localizable.strings */,
 				312A69CC28887C5E0040CE02 /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		31469A332888817500F92B56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31469A342888817F00F92B56 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31469A342888817F00F92B56 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				31469A572888A5E800F92B56 /* AddButton */,
+				31469A5228889F7F00F92B56 /* NavigationButton */,
+				31469A37288881B100F92B56 /* SignInButton.swift */,
+				31469A50288895B700F92B56 /* CreateAccountButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		31469A3B288881DE00F92B56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				31469A4A2888919200F92B56 /* TextHelper.swift */,
+				31469A552888A2E800F92B56 /* MagicLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		31469A3C28888F7700F92B56 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				31469A3E28888F9300F92B56 /* AvenirNextCyr-Bold.ttf */,
+				31469A3D28888F9300F92B56 /* AvenirNextCyr-Demi.ttf */,
+				31469A3F28888F9300F92B56 /* AvenirNextCyr-Medium.ttf */,
+				31469A4028888F9300F92B56 /* AvenirNextCyr-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31469A4528888FE400F92B56 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				31469A4628888FF100F92B56 /* Fonts.swift */,
+				31469A482888909900F92B56 /* Colors.swift */,
+				31469A4C288891B200F92B56 /* Strings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		31469A5228889F7F00F92B56 /* NavigationButton */ = {
+			isa = PBXGroup;
+			children = (
+				31469A4E288895A700F92B56 /* NavigationButton.swift */,
+				31469A5328889F9100F92B56 /* NavigationButtonType.swift */,
+			);
+			path = NavigationButton;
+			sourceTree = "<group>";
+		};
+		31469A572888A5E800F92B56 /* AddButton */ = {
+			isa = PBXGroup;
+			children = (
+				31469A39288881C300F92B56 /* AddButton.swift */,
+				31469A582888A5F400F92B56 /* AddButtonType.swift */,
+			);
+			path = AddButton;
 			sourceTree = "<group>";
 		};
 		4ADF345CACD9EDB9E177A29A /* Pods */ = {
@@ -306,7 +407,11 @@
 			files = (
 				312A69CD28887C5E0040CE02 /* Colors.xcassets in Resources */,
 				312A69A3288874390040CE02 /* LaunchScreen.storyboard in Resources */,
+				31469A4128888F9300F92B56 /* AvenirNextCyr-Demi.ttf in Resources */,
 				312A69CB28887C140040CE02 /* Localizable.strings in Resources */,
+				31469A4328888F9300F92B56 /* AvenirNextCyr-Medium.ttf in Resources */,
+				31469A4228888F9300F92B56 /* AvenirNextCyr-Bold.ttf in Resources */,
+				31469A4428888F9300F92B56 /* AvenirNextCyr-Regular.ttf in Resources */,
 				312A69A0288874390040CE02 /* Assets.xcassets in Resources */,
 				312A699B288874370040CE02 /* Main.storyboard in Resources */,
 			);
@@ -436,11 +541,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31469A4728888FF100F92B56 /* Fonts.swift in Sources */,
+				31469A4D288891B200F92B56 /* Strings.swift in Sources */,
+				31469A492888909900F92B56 /* Colors.swift in Sources */,
+				31469A4B2888919200F92B56 /* TextHelper.swift in Sources */,
 				312A6998288874370040CE02 /* ViewController.swift in Sources */,
+				31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */,
+				31469A5428889F9100F92B56 /* NavigationButtonType.swift in Sources */,
+				31469A4F288895A700F92B56 /* NavigationButton.swift in Sources */,
+				31469A3A288881C300F92B56 /* AddButton.swift in Sources */,
+				31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */,
 				312A699E288874370040CE02 /* eWalle.xcdatamodeld in Sources */,
+				31469A51288895B700F92B56 /* CreateAccountButton.swift in Sources */,
 				312A6994288874370040CE02 /* AppDelegate.swift in Sources */,
 				312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */,
 				312A6996288874370040CE02 /* SceneDelegate.swift in Sources */,
+				31469A38288881B100F92B56 /* SignInButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +736,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2W9YA7539F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = eWalle/Info.plist;
+				INFOPLIST_FILE = eWalle/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -649,7 +765,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2W9YA7539F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = eWalle/Info.plist;
+				INFOPLIST_FILE = eWalle/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
