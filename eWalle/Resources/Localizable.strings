@@ -9,13 +9,13 @@
 // MARK: - Global
 "Global.App.Title" = "eWalle";
 
+// MARK: - Views
+"Views.CurrentBalance..DescriptionLabel.Text" = "Create an account";
+
 // MARK: - Buttons
-"Views.Button.Title.SignIn" = "Sign In";
-"Views.Button.Title.CreateAccount" = "Create an account";
+"Button.Title.SignIn" = "Sign In";
+"Button.Title.CreateAccount" = "Create an account";
 
 // MARK: - SignIn ViewController
 "SignInVC.MainLabel.Text" = "Open An Account For Digital E-Wallet Solutions.Instant Payouts";
 "SignInVC.SecondaryLabel.Text" = "Join For Free.";
-
-
-

@@ -39,6 +39,10 @@
 		31469A5C2888A73200F92B56 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5B2888A73200F92B56 /* LogoView.swift */; };
 		31469A5E2888AACE00F92B56 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */; };
 		31469A602888B04900F92B56 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A5F2888B04900F92B56 /* SignInHeaderView.swift */; };
+		31469A622888C17700F92B56 /* CurrentBalanceViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A612888C17700F92B56 /* CurrentBalanceViw.swift */; };
+		31469A682888CF0800F92B56 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A672888CF0800F92B56 /* SignInViewController.swift */; };
+		31469A6B2888CF7B00F92B56 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A6A2888CF7B00F92B56 /* ViewModelType.swift */; };
+		31469A6D2888CFAD00F92B56 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A6C2888CFAD00F92B56 /* SignInViewModel.swift */; };
 		718548057DCBFFBD80329E92 /* Pods_eWalle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */; };
 		C46D651709BC571146890956 /* Pods_eWalleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27601A3607BF2707BEDDC92C /* Pods_eWalleTests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +101,10 @@
 		31469A5B2888A73200F92B56 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		31469A5D2888AACE00F92B56 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		31469A5F2888B04900F92B56 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
+		31469A612888C17700F92B56 /* CurrentBalanceViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBalanceViw.swift; sourceTree = "<group>"; };
+		31469A672888CF0800F92B56 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		31469A6A2888CF7B00F92B56 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		31469A6C2888CFAD00F92B56 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		3ACA0D5E4D3466D0B7C3DE87 /* Pods-eWalleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWalleTests.release.xcconfig"; path = "Target Support Files/Pods-eWalleTests/Pods-eWalleTests.release.xcconfig"; sourceTree = "<group>"; };
 		46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle_eWalleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +168,8 @@
 		312A6992288874370040CE02 /* eWalle */ = {
 			isa = PBXGroup;
 			children = (
+				31469A692888CF0E00F92B56 /* Protocols */,
+				31469A632888CEDF00F92B56 /* Controllers */,
 				31469A4528888FE400F92B56 /* Constants */,
 				31469A3B288881DE00F92B56 /* Helpers */,
 				31469A332888817500F92B56 /* Views */,
@@ -218,6 +228,7 @@
 				31469A5B2888A73200F92B56 /* LogoView.swift */,
 				31469A342888817F00F92B56 /* Buttons */,
 				31469A5F2888B04900F92B56 /* SignInHeaderView.swift */,
+				31469A612888C17700F92B56 /* CurrentBalanceViw.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +291,47 @@
 				31469A582888A5F400F92B56 /* AddButtonType.swift */,
 			);
 			path = AddButton;
+			sourceTree = "<group>";
+		};
+		31469A632888CEDF00F92B56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31469A662888CEF600F92B56 /* Menu */,
+				31469A652888CEEF00F92B56 /* Main */,
+				31469A642888CEE700F92B56 /* SignIn */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		31469A642888CEE700F92B56 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				31469A672888CF0800F92B56 /* SignInViewController.swift */,
+				31469A6C2888CFAD00F92B56 /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		31469A652888CEEF00F92B56 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		31469A662888CEF600F92B56 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		31469A692888CF0E00F92B56 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				31469A6A2888CF7B00F92B56 /* ViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		4ADF345CACD9EDB9E177A29A /* Pods */ = {
@@ -559,9 +611,12 @@
 				312A6998288874370040CE02 /* ViewController.swift in Sources */,
 				31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */,
 				31469A5428889F9100F92B56 /* NavigationButtonType.swift in Sources */,
+				31469A6D2888CFAD00F92B56 /* SignInViewModel.swift in Sources */,
+				31469A682888CF0800F92B56 /* SignInViewController.swift in Sources */,
 				31469A4F288895A700F92B56 /* NavigationButton.swift in Sources */,
 				31469A3A288881C300F92B56 /* AddButton.swift in Sources */,
 				31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */,
+				31469A622888C17700F92B56 /* CurrentBalanceViw.swift in Sources */,
 				312A699E288874370040CE02 /* eWalle.xcdatamodeld in Sources */,
 				31469A51288895B700F92B56 /* CreateAccountButton.swift in Sources */,
 				31469A602888B04900F92B56 /* SignInHeaderView.swift in Sources */,
@@ -569,6 +624,7 @@
 				312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */,
 				312A6996288874370040CE02 /* SceneDelegate.swift in Sources */,
 				31469A38288881B100F92B56 /* SignInButton.swift in Sources */,
+				31469A6B2888CF7B00F92B56 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

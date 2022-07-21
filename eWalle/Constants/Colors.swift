@@ -26,7 +26,8 @@ struct Colors {
         case primary
         case secondary
         case auxiliary
-        case dark
+        case signIn
+        case balance
 
         func color() -> UIColor {
             switch self {
@@ -36,8 +37,10 @@ struct Colors {
                 return UIColor(named: "Text.Secondary")!
             case .auxiliary:
                 return UIColor(named: "Text.Auxiliary")!
-            case .dark:
-                return UIColor(named: "Text.Dark")!
+            case .signIn:
+                return UIColor(named: "Text.SignIn")!
+            case .balance:
+                return UIColor(named: "Text.Balance")!
             }
         }
     }

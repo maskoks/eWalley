@@ -14,7 +14,7 @@ struct Strings {
         func string() -> String {
             switch self {
             case .appTitle:
-                return Strings.Global.appTitle.string()
+                return NSLocalizedString("Global.App.Title", comment: "")
             }
         }
     }
@@ -26,9 +26,34 @@ struct Strings {
         func string() -> String {
             switch self {
             case .signIn:
-                return NSLocalizedString("Views.Button.Title.SignIn", comment: "")
+                return NSLocalizedString("Button.Title.SignIn", comment: "")
             case .createAccount:
-                return NSLocalizedString("Views.Button.Title.CreateAccount", comment: "")
+                return NSLocalizedString("Button.Title.CreateAccount", comment: "")
+            }
+        }
+    }
+
+    enum Views {
+        case currentBalance
+
+        func string() -> String {
+            switch self {
+            case .currentBalance:
+                return NSLocalizedString("Views.CurrentBalance..DescriptionLabel.Text", comment: "")
+            }
+        }
+    }
+
+    enum SignInVC {
+        case mainLabel
+        case secondaryLabel
+
+        func string() -> String {
+            switch self {
+            case .mainLabel:
+                return NSLocalizedString("SignInVC.MainLabel.Text", comment: "")
+            case .secondaryLabel:
+                return NSLocalizedString("SignInVC.SecondaryLabel.Text", comment: "")
             }
         }
     }
