@@ -21,12 +21,12 @@ final class SignInHeaderView: UIView {
 
     private let dateLabel = UILabel()
 
-    public var time: String = "" {
+    public var time: String = "Loading..." {
         didSet {
             setupTime()
         }
     }
-    public var date: String = "" {
+    public var date: String = "Please wait" {
         didSet {
             setupDate()
         }
@@ -58,7 +58,7 @@ final class SignInHeaderView: UIView {
 
     private func setupDate() {
         dateLabel.attributedText = TextHelper.setupAttributes(with: date,
-                                                              textColor: Colors.Text.primary.color(),
+                                                              textColor: Colors.Text.secondary.color(),
                                                               font: Fonts.AvenirNext.medium(size: 13.0).font())
     }
 

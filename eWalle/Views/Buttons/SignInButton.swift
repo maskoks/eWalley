@@ -32,11 +32,11 @@ final class SignInButton: UIButton {
         backgroundColor = Colors.Elements.orange.color()
 
         setImage(UIImage(named: "arrow"), for: .normal)
-        tintColor = Colors.Text.dark.color()
+        tintColor = Colors.Text.signIn.color()
         semanticContentAttribute = .forceRightToLeft
 
         let title = TextHelper.setupAttributes(with: Strings.Buttons.signIn.string(),
-                                               textColor: Colors.Text.dark.color(),
+                                               textColor: Colors.Text.signIn.color(),
                                                font: Fonts.AvenirNext.demibold(size: 16.0).font())
         setAttributedTitle(title, for: .normal)
     }

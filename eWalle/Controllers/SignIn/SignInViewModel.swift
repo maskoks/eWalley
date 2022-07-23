@@ -18,7 +18,8 @@ final class SignInViewModel: NSObject, ViewModelType {
     }
 
     struct Output {
-
+        let time: Driver<String>
+        let date: Driver<String>
     }
 
     private(set) var input: Input!
@@ -36,7 +37,43 @@ final class SignInViewModel: NSObject, ViewModelType {
             createAccountTapped: createAccountTappedSubject.asObserver()
         )
         self.output = Output(
-
+            time: time(),
+            date: date()
         )
+    }
+
+
+    private func time() -> Driver<String> {
+        return reloadSubject
+            .flatMapLatest { _ in
+                return Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+                    .flatMapLatest {  seconds -> Observable<String> in
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.timeStyle = .short
+                        let time = dateFormatter.string(from: Date())
+                        return .just(time)
+                    }
+            }
+            .asDriver(onErrorJustReturn: "")
+    }
+
+    private func date() -> Driver<String> {
+        return reloadSubject
+            .flatMapLatest { _ in
+                return Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+                    .flatMapLatest {  seconds -> Observable<String> in
+                        let dayFormatter = DateFormatter()
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "MMM d, yyyy"
+                        dayFormatter.dateFormat = "EEEE"
+                        dayFormatter.locale = Locale(identifier: "en_US_POSIX")
+                        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+                        let day = dayFormatter.string(from: Date())
+                        let date = dateFormatter.string(from: Date())
+                        let fullDateText = "\(date) | \(day)"
+                        return .just(fullDateText)
+                    }
+            }
+            .asDriver(onErrorJustReturn: "")
     }
 }

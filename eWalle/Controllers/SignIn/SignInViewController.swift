@@ -10,6 +10,8 @@ import RxSwift
 import RxCocoa
 
 final class SignInViewController: UIViewController {
+    // MARK: - Coordinate
+    var onCompleteSignIn: (() -> Void)?
 
     // MARK: - UI
     private let contentView: UIView = {
@@ -20,7 +22,8 @@ final class SignInViewController: UIViewController {
 
     private let backLogoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "")
+        imageView.image = UIImage(named: "back_logo")
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
 
@@ -72,12 +75,45 @@ final class SignInViewController: UIViewController {
         configureUI()
         bindViewModelInputs()
         bindViewModelOutputs()
+        viewModel.input.reload.onNext(())
+    }
+}
+
+// MARK: - Rx
+private extension SignInViewController {
+    func bindViewModelInputs() {
+        signInButton
+            .rx
+            .tap
+            .bind { [weak self] in
+                self?.onCompleteSignIn?()
+            }
+            .disposed(by: disposeBag)
+    }
+
+    func bindViewModelOutputs() {
+        viewModel
+            .output
+            .time
+            .drive { [weak self] time in
+                self?.headerView.time = time
+            }
+            .disposed(by: disposeBag)
+        viewModel
+            .output
+            .date
+            .drive { [weak self] date in
+                self?.headerView.date = date
+            }
+            .disposed(by: disposeBag)
     }
 }
 
 // MARK: - Configure
 private extension SignInViewController {
     func configureUI() {
+        view.backgroundColor = Colors.Background.basic.color()
+
         configureContentView()
         configureImageView()
         configureHeaderView()
@@ -95,6 +131,7 @@ private extension SignInViewController {
     func configureImageView() {
         contentView.addSubview(backLogoImageView.prepareForAutoLayout())
         backLogoImageView.pinEdgesToSuperviewEdges(excluding: .right)
+        backLogoImageView.widthAnchor ~= 135.0
     }
 
     func configureHeaderView() {
@@ -118,22 +155,11 @@ private extension SignInViewController {
 
     func configureButtons() {
         contentView.addSubview(createAccountButton.prepareForAutoLayout())
-        createAccountButton.leftAnchor ~= backLogoImageView.leftAnchor + 55.0
+        createAccountButton.leftAnchor ~= backLogoImageView.rightAnchor + 55.0
         createAccountButton.bottomAnchor ~= contentView.bottomAnchor - 53.0
 
         contentView.addSubview(signInButton.prepareForAutoLayout())
         signInButton.leftAnchor ~= backLogoImageView.rightAnchor + 26.0
         signInButton.bottomAnchor ~= createAccountButton.topAnchor - 29.0
-    }
-}
-
-// MARK: - Rx
-private extension SignInViewController {
-    func bindViewModelInputs() {
-        
-    }
-
-    func bindViewModelOutputs() {
-
     }
 }

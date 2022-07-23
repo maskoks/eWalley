@@ -10,15 +10,12 @@
 		0AF95B83924067932F092287 /* Pods_eWalle_eWalleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */; };
 		312A6994288874370040CE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A6993288874370040CE02 /* AppDelegate.swift */; };
 		312A6996288874370040CE02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A6995288874370040CE02 /* SceneDelegate.swift */; };
-		312A6998288874370040CE02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A6997288874370040CE02 /* ViewController.swift */; };
-		312A699B288874370040CE02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312A6999288874370040CE02 /* Main.storyboard */; };
 		312A699E288874370040CE02 /* eWalle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 312A699C288874370040CE02 /* eWalle.xcdatamodeld */; };
 		312A69A0288874390040CE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312A699F288874390040CE02 /* Assets.xcassets */; };
 		312A69A3288874390040CE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312A69A1288874390040CE02 /* LaunchScreen.storyboard */; };
 		312A69AE2888743A0040CE02 /* eWalleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A69AD2888743A0040CE02 /* eWalleTests.swift */; };
 		312A69B82888743A0040CE02 /* eWalleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A69B72888743A0040CE02 /* eWalleUITests.swift */; };
 		312A69BA2888743A0040CE02 /* eWalleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A69B92888743A0040CE02 /* eWalleUITestsLaunchTests.swift */; };
-		312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A69C6288874F00040CE02 /* SecondViewController.swift */; };
 		312A69CB28887C140040CE02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 312A69CA28887C140040CE02 /* Localizable.strings */; };
 		312A69CD28887C5E0040CE02 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312A69CC28887C5E0040CE02 /* Colors.xcassets */; };
 		31469A38288881B100F92B56 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A37288881B100F92B56 /* SignInButton.swift */; };
@@ -43,6 +40,15 @@
 		31469A682888CF0800F92B56 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A672888CF0800F92B56 /* SignInViewController.swift */; };
 		31469A6B2888CF7B00F92B56 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A6A2888CF7B00F92B56 /* ViewModelType.swift */; };
 		31469A6D2888CFAD00F92B56 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31469A6C2888CFAD00F92B56 /* SignInViewModel.swift */; };
+		31DF13C6288AD21A000D6A27 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13C5288AD21A000D6A27 /* Coordinator.swift */; };
+		31DF13CB288AD2A2000D6A27 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13CA288AD2A2000D6A27 /* BaseCoordinator.swift */; };
+		31DF13CD288B1620000D6A27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13CC288B1620000D6A27 /* AppCoordinator.swift */; };
+		31DF13D6288B29DA000D6A27 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13D5288B29DA000D6A27 /* HomeViewController.swift */; };
+		31DF13D8288B2A00000D6A27 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13D7288B2A00000D6A27 /* MenuViewController.swift */; };
+		31DF13DA288B2BAF000D6A27 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13D9288B2BAF000D6A27 /* BaseNavigationController.swift */; };
+		31DF13DC288B2F30000D6A27 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13DB288B2F30000D6A27 /* SignInCoordinator.swift */; };
+		31DF13DE288B30BE000D6A27 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13DD288B30BE000D6A27 /* MainCoordinator.swift */; };
+		31DF13E0288B45B2000D6A27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF13DF288B45B2000D6A27 /* MainViewController.swift */; };
 		718548057DCBFFBD80329E92 /* Pods_eWalle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */; };
 		C46D651709BC571146890956 /* Pods_eWalleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27601A3607BF2707BEDDC92C /* Pods_eWalleTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,8 +75,6 @@
 		312A6990288874370040CE02 /* eWalle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eWalle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312A6993288874370040CE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		312A6995288874370040CE02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		312A6997288874370040CE02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		312A699A288874370040CE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		312A699D288874370040CE02 /* eWalle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eWalle.xcdatamodel; sourceTree = "<group>"; };
 		312A699F288874390040CE02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312A69A2288874390040CE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +84,6 @@
 		312A69B32888743A0040CE02 /* eWalleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eWalleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		312A69B72888743A0040CE02 /* eWalleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eWalleUITests.swift; sourceTree = "<group>"; };
 		312A69B92888743A0040CE02 /* eWalleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eWalleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		312A69C6288874F00040CE02 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		312A69CA28887C140040CE02 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		312A69CC28887C5E0040CE02 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		31469A37288881B100F92B56 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
@@ -105,6 +108,15 @@
 		31469A672888CF0800F92B56 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		31469A6A2888CF7B00F92B56 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		31469A6C2888CFAD00F92B56 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		31DF13C5288AD21A000D6A27 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		31DF13CA288AD2A2000D6A27 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		31DF13CC288B1620000D6A27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		31DF13D5288B29DA000D6A27 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		31DF13D7288B2A00000D6A27 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		31DF13D9288B2BAF000D6A27 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		31DF13DB288B2F30000D6A27 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		31DF13DD288B30BE000D6A27 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		31DF13DF288B45B2000D6A27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3ACA0D5E4D3466D0B7C3DE87 /* Pods-eWalleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWalleTests.release.xcconfig"; path = "Target Support Files/Pods-eWalleTests/Pods-eWalleTests.release.xcconfig"; sourceTree = "<group>"; };
 		46B00D7506CB5DE594523B75 /* Pods_eWalle_eWalleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle_eWalleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D604BF060FB6BAB1C9CFEF8 /* Pods_eWalle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWalle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +180,7 @@
 		312A6992288874370040CE02 /* eWalle */ = {
 			isa = PBXGroup;
 			children = (
+				31DF13C9288AD27F000D6A27 /* Coordinators */,
 				31469A692888CF0E00F92B56 /* Protocols */,
 				31469A632888CEDF00F92B56 /* Controllers */,
 				31469A4528888FE400F92B56 /* Constants */,
@@ -175,11 +188,8 @@
 				31469A332888817500F92B56 /* Views */,
 				312A69C928887BDD0040CE02 /* Resources */,
 				312A69C828887BBC0040CE02 /* Application */,
-				312A6997288874370040CE02 /* ViewController.swift */,
-				312A6999288874370040CE02 /* Main.storyboard */,
 				312A69A1288874390040CE02 /* LaunchScreen.storyboard */,
 				312A699C288874370040CE02 /* eWalle.xcdatamodeld */,
-				312A69C6288874F00040CE02 /* SecondViewController.swift */,
 			);
 			path = eWalle;
 			sourceTree = "<group>";
@@ -297,8 +307,10 @@
 			isa = PBXGroup;
 			children = (
 				31469A662888CEF600F92B56 /* Menu */,
-				31469A652888CEEF00F92B56 /* Main */,
+				31469A652888CEEF00F92B56 /* Home */,
 				31469A642888CEE700F92B56 /* SignIn */,
+				31DF13D9288B2BAF000D6A27 /* BaseNavigationController.swift */,
+				31DF13DF288B45B2000D6A27 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,16 +324,18 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		31469A652888CEEF00F92B56 /* Main */ = {
+		31469A652888CEEF00F92B56 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				31DF13D5288B29DA000D6A27 /* HomeViewController.swift */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		31469A662888CEF600F92B56 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				31DF13D7288B2A00000D6A27 /* MenuViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -330,8 +344,20 @@
 			isa = PBXGroup;
 			children = (
 				31469A6A2888CF7B00F92B56 /* ViewModelType.swift */,
+				31DF13C5288AD21A000D6A27 /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		31DF13C9288AD27F000D6A27 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				31DF13CA288AD2A2000D6A27 /* BaseCoordinator.swift */,
+				31DF13CC288B1620000D6A27 /* AppCoordinator.swift */,
+				31DF13DB288B2F30000D6A27 /* SignInCoordinator.swift */,
+				31DF13DD288B30BE000D6A27 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		4ADF345CACD9EDB9E177A29A /* Pods */ = {
@@ -475,7 +501,6 @@
 				31469A5E2888AACE00F92B56 /* Ubuntu-Medium.ttf in Resources */,
 				31469A4428888F9300F92B56 /* AvenirNextCyr-Regular.ttf in Resources */,
 				312A69A0288874390040CE02 /* Assets.xcassets in Resources */,
-				312A699B288874370040CE02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,23 +630,30 @@
 			files = (
 				31469A5C2888A73200F92B56 /* LogoView.swift in Sources */,
 				31469A4728888FF100F92B56 /* Fonts.swift in Sources */,
+				31DF13CD288B1620000D6A27 /* AppCoordinator.swift in Sources */,
 				31469A4D288891B200F92B56 /* Strings.swift in Sources */,
 				31469A492888909900F92B56 /* Colors.swift in Sources */,
 				31469A4B2888919200F92B56 /* TextHelper.swift in Sources */,
-				312A6998288874370040CE02 /* ViewController.swift in Sources */,
+				31DF13D8288B2A00000D6A27 /* MenuViewController.swift in Sources */,
+				31DF13DA288B2BAF000D6A27 /* BaseNavigationController.swift in Sources */,
 				31469A592888A5F400F92B56 /* AddButtonType.swift in Sources */,
+				31DF13D6288B29DA000D6A27 /* HomeViewController.swift in Sources */,
+				31DF13E0288B45B2000D6A27 /* MainViewController.swift in Sources */,
 				31469A5428889F9100F92B56 /* NavigationButtonType.swift in Sources */,
 				31469A6D2888CFAD00F92B56 /* SignInViewModel.swift in Sources */,
 				31469A682888CF0800F92B56 /* SignInViewController.swift in Sources */,
+				31DF13DE288B30BE000D6A27 /* MainCoordinator.swift in Sources */,
 				31469A4F288895A700F92B56 /* NavigationButton.swift in Sources */,
 				31469A3A288881C300F92B56 /* AddButton.swift in Sources */,
 				31469A562888A2E800F92B56 /* MagicLayout.swift in Sources */,
 				31469A622888C17700F92B56 /* CurrentBalanceViw.swift in Sources */,
 				312A699E288874370040CE02 /* eWalle.xcdatamodeld in Sources */,
+				31DF13CB288AD2A2000D6A27 /* BaseCoordinator.swift in Sources */,
 				31469A51288895B700F92B56 /* CreateAccountButton.swift in Sources */,
 				31469A602888B04900F92B56 /* SignInHeaderView.swift in Sources */,
+				31DF13C6288AD21A000D6A27 /* Coordinator.swift in Sources */,
 				312A6994288874370040CE02 /* AppDelegate.swift in Sources */,
-				312A69C7288874F00040CE02 /* SecondViewController.swift in Sources */,
+				31DF13DC288B2F30000D6A27 /* SignInCoordinator.swift in Sources */,
 				312A6996288874370040CE02 /* SceneDelegate.swift in Sources */,
 				31469A38288881B100F92B56 /* SignInButton.swift in Sources */,
 				31469A6B2888CF7B00F92B56 /* ViewModelType.swift in Sources */,
@@ -661,14 +693,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		312A6999288874370040CE02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				312A699A288874370040CE02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		312A69A1288874390040CE02 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -807,7 +831,6 @@
 				INFOPLIST_FILE = eWalle/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -836,7 +859,6 @@
 				INFOPLIST_FILE = eWalle/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

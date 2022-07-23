@@ -10,6 +10,7 @@ target 'eWalle' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources'
+    pod 'LGSideMenuController'
 
   target 'eWalleTests' do
     inherit! :search_paths
