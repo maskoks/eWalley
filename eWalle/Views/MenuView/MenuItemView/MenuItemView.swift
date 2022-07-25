@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuItemView: UIView {
+final class MenuItemView: UIView {
 
     var model: Model? {
         didSet {

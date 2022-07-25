@@ -13,30 +13,13 @@ protocol Coordinator: AnyObject {
 
     func start()
 
-    func addChildCoordinator(_ coordinator: Coordinator)
-    func removeChildCoordinator(_ coordinator: Coordinator)
+    func addDependency(_ coordinator: Coordinator)
+    func removeDependency(_ coordinator: Coordinator?)
     func popViewController(animated: Bool)
     func dismissViewController(animated: Bool, completion: (() -> Void)?)
 }
 
 extension Coordinator {
-    func addChildCoordinator(_ coordinator: Coordinator) {
-        for element in childCoordinators where element === coordinator {
-            return
-        }
-
-        childCoordinators.append(coordinator)
-    }
-
-    func removeChildCoordinator(_ coordinator: Coordinator) {
-        guard !childCoordinators.isEmpty else { return }
-
-        for (index, element) in childCoordinators.enumerated() where element === coordinator {
-            childCoordinators.remove(at: index)
-            break
-        }
-    }
-
     func popViewController(animated: Bool) {
         navigationController.popViewController(animated: animated)
     }

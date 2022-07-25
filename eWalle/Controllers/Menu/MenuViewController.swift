@@ -8,8 +8,7 @@
 import UIKit
 import RxSwift
 
-class MenuViewController: UIViewController {
-
+final class MenuViewController: UIViewController {
     // MARK: - Coordinate
     public var onCloseButton: (() -> Void)?
     public var itemSelected: ((MenuItemView.Model) -> Void)?
@@ -18,6 +17,8 @@ class MenuViewController: UIViewController {
     // MARK: - Private Properties
     private let disposeBag = DisposeBag()
     private let viewModel: MenuViewModel
+
+    private let isSmallScreen: Bool = UIScreen.main.nativeBounds.height < 1500.0
 
     // MARK: - UI
     private let contentView = UIView()
@@ -136,7 +137,11 @@ private extension MenuViewController {
     func configureMenu() {
         contentView.addSubview(menu.prepareForAutoLayout())
         menu.pinExcludingEdgesToSuperviewEdges(top: nil, left: 0.0, bottom: nil, right: 100.0)
-        menu.topAnchor ~= profileView.bottomAnchor + 112.0
+        if isSmallScreen {
+            menu.topAnchor ~= profileView.bottomAnchor + 10.0
+        } else {
+            menu.topAnchor ~= profileView.bottomAnchor + 112.0
+        }
     }
 
     func configureFooter() {

@@ -20,7 +20,6 @@ final class HomeViewController: MenuFlowViewController {
     }()
 
     private let contentView = BasicView()
-    private let servicesCellWidth = UIScreen.main.bounds.width/4-28.0
 
     private let stackView: UIStackView = {
         let stack = UIStackView()
@@ -81,6 +80,8 @@ final class HomeViewController: MenuFlowViewController {
     private let disposeBag = DisposeBag()
     private let viewModel: HomeViewModel
 
+    private let servicesCellWidth = UIScreen.main.bounds.width/4-28.0
+
     // MARK: - DataSources
     private lazy var userDataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, UserCellViewModel>>(
         configureCell: { (_, collectionView, indexPath, element) in
@@ -125,7 +126,7 @@ final class HomeViewController: MenuFlowViewController {
         layout.itemSize = CGSize(width: servicesCellWidth, height: servicesCellWidth*1.5)
         layout.minimumLineSpacing = 28.0
         layout.minimumInteritemSpacing = 0.0
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10.0, bottom: 0, right: 10.0)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15.0, bottom: 0, right: 15.0)
         return layout
     }()
 
@@ -165,11 +166,13 @@ final class HomeViewController: MenuFlowViewController {
         usersCollectionView.register(SendMoneyReusableHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         usersCollectionView.isScrollEnabled = true
         usersCollectionView.showsHorizontalScrollIndicator = false
+        usersCollectionView.backgroundColor = Colors.Background.basic.color()
 
         servicesCollectionView = UICollectionView(frame: .zero, collectionViewLayout: serviceLayout)
         servicesCollectionView.register(ServiceCell.self, forCellWithReuseIdentifier: "cell")
-        usersCollectionView.isScrollEnabled = true
-        usersCollectionView.showsHorizontalScrollIndicator = false
+        servicesCollectionView.isScrollEnabled = true
+        servicesCollectionView.showsHorizontalScrollIndicator = false
+        servicesCollectionView.backgroundColor = Colors.Background.basic.color()
     }
 
 
@@ -177,7 +180,7 @@ final class HomeViewController: MenuFlowViewController {
         view.backgroundColor = Colors.Background.basic.color()
         configureScrollView()
         configureContentView()
-        configureHeader()
+        configureHeaderSection()
         configureAccountOverviewSection()
         configureSendMoneySection()
         configureServicesSection()
@@ -226,7 +229,7 @@ extension HomeViewController {
         contentView.widthAnchor ~= scrollView.widthAnchor
     }
 
-    func configureHeader() {
+    func configureHeaderSection() {
         headerSectionView.addSubview(logoView.prepareForAutoLayout())
         logoView.pinExcludingEdgesToSuperviewEdges(top: 31.0, left: 25.0, bottom: nil, right: nil)
 

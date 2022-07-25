@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: BaseCoordinator {
+final class AppCoordinator: BaseCoordinator {
 
     var isAutorized = false // fake authorisation logic
 

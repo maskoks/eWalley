@@ -28,6 +28,7 @@ final class MainViewController: LGSideMenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = Colors.Background.secondary.color()
+        isLeftViewSwipeGestureEnabled = false
         configureRootViewController()
         configureLeftViewController()
     }

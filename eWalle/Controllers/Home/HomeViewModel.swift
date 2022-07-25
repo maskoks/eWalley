@@ -63,7 +63,7 @@ final class HomeViewModel: NSObject, ViewModelType {
 
     private func fakeUserRequest() -> Observable<[UserModel]> {
         return Observable.create { observer in
-            // fake services request and get services in response
+            // fake user request and get user in response
             let response: [UserModel] = [
                 UserModel(name: "Mike", surname: "Doe", avatar: UIImage(named: "user2")!, city: "Moscow", country: "Russia"),
                 UserModel(name: "Joshpeh", surname: "Smith", avatar: UIImage(named: "user3")!, city: "New-York", country: "USA"),

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ProfileView: UIView {
+final class ProfileView: UIView {
 
     private let nameLabel = UILabel()
     private let locationLabel = UILabel()
@@ -16,6 +16,7 @@ class ProfileView: UIView {
     private let backImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "profile_view_back")
+        imageView.tintColor = Colors.Background.basic.color()
         return imageView
     }()
 
