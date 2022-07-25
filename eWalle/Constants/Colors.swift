@@ -17,7 +17,7 @@ struct Colors {
             case .basic:
                 return UIColor(named: "Background.Basic")!
             case .secondary:
-                return UIColor(named: "Gradient.Secondary")!
+                return UIColor(named: "Background.Secondary")!
             }
         }
     }

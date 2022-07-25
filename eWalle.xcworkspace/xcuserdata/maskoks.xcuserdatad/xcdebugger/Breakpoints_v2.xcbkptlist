@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C29395E-3BB1-46EA-809E-FC0A2BB8D202"
+            uuid = "59D821E4-AE21-4A9F-A6CF-5DFD44D708C0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "eWalle/Routers/NavigationRouter.swift"
+            filePath = "eWalle/Controllers/Menu/MenuViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "present(_:animated:onDismissed:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3CC6D00B-C8D8-426D-BED0-453A6EC5B31D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eWalle/Routers/AppDelegateRouter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "present(_:animated:onDismissed:)"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "bindViewModelOutputs()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -20,13 +20,6 @@ class AppCoordinator: BaseCoordinator {
         self.runFlow(isAuthorised: isAutorized)
     }
 
-// MARK: - PRIVATE
-    private func menuViewController() -> MenuViewController? {
-        let menuViewController = MenuViewController()
-        return menuViewController
-    }
-
-// MARK: - FLOW
     private func runFlow(isAuthorised: Bool) {
         if isAuthorised {
             runMainFlow()

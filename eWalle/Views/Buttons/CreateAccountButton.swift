@@ -9,6 +9,10 @@ import UIKit
 
 final class CreateAccountButton: UIButton {
 
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 133.0, height: 25.0)
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -17,10 +21,6 @@ final class CreateAccountButton: UIButton {
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 133.0, height: 25.0)
     }
 
     private func setup() {

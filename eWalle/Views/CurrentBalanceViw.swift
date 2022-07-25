@@ -7,7 +7,7 @@
 
 import UIKit
 
-private class CurrentBalanceViw: UIView {
+final class CurrentBalanceView: UIView {
 
     private let balanceLabel = UILabel()
 
@@ -57,6 +57,6 @@ private class CurrentBalanceViw: UIView {
         descriptionLabel.topAnchor ~= balanceLabel.bottomAnchor + 8.0
 
         addSubview(addButton.prepareForAutoLayout())
-        addButton.pinExcludingEdgesToSuperviewEdges(top: 34.0, left: nil, bottom: nil, right: 25.0)
+        addButton.pinExcludingEdgesToSuperviewEdges(top: 34.0, left: nil, bottom: 26.0, right: 25.0)
     }
 }

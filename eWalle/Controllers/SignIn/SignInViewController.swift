@@ -89,6 +89,13 @@ private extension SignInViewController {
                 self?.onCompleteSignIn?()
             }
             .disposed(by: disposeBag)
+        createAccountButton
+            .rx
+            .tap
+            .bind { [weak self] in
+                self?.onCompleteSignIn?()
+            }
+            .disposed(by: disposeBag)
     }
 
     func bindViewModelOutputs() {

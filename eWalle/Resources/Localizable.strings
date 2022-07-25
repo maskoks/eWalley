@@ -10,12 +10,38 @@
 "Global.App.Title" = "eWalle";
 
 // MARK: - Views
-"Views.CurrentBalance..DescriptionLabel.Text" = "Create an account";
+"Views.CurrentBalance.DescriptionLabel.Text" = "Current balance";
 
 // MARK: - Buttons
 "Button.Title.SignIn" = "Sign In";
 "Button.Title.CreateAccount" = "Create an account";
+"Button.Title.Logout" = "Logout";
 
 // MARK: - SignIn ViewController
 "SignInVC.MainLabel.Text" = "Open An Account For Digital E-Wallet Solutions.Instant Payouts";
 "SignInVC.SecondaryLabel.Text" = "Join For Free.";
+
+// MARK: - Home ViewController
+"HomeVC.AccountOverview.Text" = "Account Overview";
+"HomeVC.SendMoney.Text" = "Send Money";
+"HomeVC.Services.Text" = "Services";
+
+// MARK: - Services
+"Global.Services.SendMoney" = "Send Money";
+"Global.Services.ReceiveMoney" = "Receive Money";
+"Global.Services.MobilePrepaid" = "Mobile Prepaid";
+"Global.Services.ElectricityBill" = "Electricity Bill";
+"Global.Services.CashbackOffer" = "Cashback Offer";
+"Global.Services.MovieTickets" = "Movie Tickets";
+"Global.Services.FlightTickets" = "Flight Tickets";
+"Global.Services.MoreOptions" = "More Options";
+
+// MARK: - MenuVC
+"MenuVC.MenuView.Item.Home" = "Home";
+"MenuVC.MenuView.Item.Profile" = "Profile";
+"MenuVC.MenuView.Item.Accounts" = "Accounts";
+"MenuVC.MenuView.Item.Transactions" = "Transactions";
+"MenuVC.MenuView.Item.Stats" = "Stats";
+"MenuVC.MenuView.Item.Settings" = "Settings";
+"MenuVC.MenuView.Item.Help" = "Help";
+"MenuVC.VersionLabel.Title" = "Version";

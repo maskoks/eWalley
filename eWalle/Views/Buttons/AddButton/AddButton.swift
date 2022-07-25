@@ -31,5 +31,6 @@ final class AddButton: UIButton {
         backgroundColor = Colors.Elements.orange.color()
         setTitle(nil, for: .normal)
         setImage(UIImage(named: "add"), for: .normal)
+        tintColor = Colors.Text.primary.color()
     }
 }

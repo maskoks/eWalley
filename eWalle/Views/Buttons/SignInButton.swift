@@ -9,6 +9,10 @@ import UIKit
 
 final class SignInButton: UIButton {
 
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 190.0, height: 50.0)
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -22,10 +26,6 @@ final class SignInButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         imageEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: -8.0)
-    }
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 190.0, height: 50.0)
     }
 
     private func setup() {
